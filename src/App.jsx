@@ -12,6 +12,7 @@ function App() {
     console.log([...formData.entries()]); //this will generate the o/p of all the entries in the output field in the form of array
 
     const newUser = Object.fromEntries(formData); // this will give the o/p as the object so that we can directly send the data
+    e.currentTarget.reset();
     console.log(newUser);
   };
 
